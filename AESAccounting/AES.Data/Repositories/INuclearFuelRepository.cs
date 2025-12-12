@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AES.Data.Repositories
+﻿using AES.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+public interface INuclearFuelRepository
 {
-    internal class INuclearFuelRepository
-    {
-    }
+    Task AddBatchWithRecordAsync(NuclearFuelBatch batch);
+    Task<NuclearFuelBatch?> GetByBatchNumberAsync(string batchNumber);
+    Task<IEnumerable<NuclearFuelBatch>> GetBatchesInZoneAsync(string zone);
 }

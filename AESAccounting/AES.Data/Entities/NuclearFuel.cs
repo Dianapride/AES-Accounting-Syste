@@ -1,12 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AES.Data
-{
-    internal class NuclearFuel
-    {
-    }
-}
+﻿using AES.Core.Entities;
+using Microsoft.EntityFrameworkCore;
+public class NuclearFuel { public int Id { get; set; } public string BatchNumber { get; set; } }
