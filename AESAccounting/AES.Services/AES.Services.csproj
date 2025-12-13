@@ -11,4 +11,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AES.Core\AES.Core.csproj" />
+    <ProjectReference Include="..\AES.Data\AES.Data.csproj" />
+  </ItemGroup>
+
 </Project>
